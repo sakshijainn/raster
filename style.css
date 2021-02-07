@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    text-align: right;
+  }
+  
+  .navigation li {
+    padding: 0rem 0.5rem;
+    display: inline;
+  }
+  
+  .navigation {
+    padding-top: 2rem;
+    color: white;
+    background-color: #15202B;
+    padding: 0.5rem;
+    border-bottom-left-radius: 2rem;
+    
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navigation li a:hover {
+    color: #EFEFEF;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  .navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-size: 1.3rem;
+  }
+  
+  .navigation .link-active {
+    font-weight: bold;
+  }
+  .image-container {
+    padding: 2rem;
+  }
+  
+  .image-container .image {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+  }
+  .heading {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  #btn
+  {
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 3.5rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.3rem;
+      text-decoration: none;
+      border-radius: 10px;
+
+  }
+  .two  {
+    padding-top: 1rem;
+    background-color: #00DFC0;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  .two h4 {
+    color: black;
+  
+    padding: 0 0.5rem;
+  }
+
+  .three 
+  {
+    padding: 10px;
+    background-color: #F1F1F1;
+    text-align: center;
+    font-size: 1rem;
+    
+   
+  }
+  .three a 
+  {
+      cursor: pointer;
+      color: #1C2D5E;
+      text-decoration: none;
+  }
+  .services{
+    background: #f1f1f1;
+    text-align: center;
+  }
+  .services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #15202B;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+  }
+  .cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .service:hover{
+    background: #ddd;
+  }
+  .service i{
+    color: black;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+  }
+  .service p{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #aaa;
+	transition:all ease 0.3s;
+     
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #fff;
+       	 
+	background: linear-gradient(to right, #00DFC0 0%,#00DFC0 100%); 
+}
+
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+    font-size: 14px;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+
+#progress-bar-container li:hover:after {
+	background:#555;
+}
+
+#progress-bar-container li.active:after {
+	background:#15202B;
+}
+
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #eee;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: #15202B;	 
+	background: linear-gradient(to right, #15202B 0%,#15202B 100%); 
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #15202B;
+	border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+    margin-bottom: 2rem;
+    border-radius: 35px;
+}
+
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:white;
+	letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:white;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+
+#progress-title
+{
+    color:#333;
+	font-weight:700;
+	margin-top:125px;	 
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	line-height:23px;
+}
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 800px) {
+    .service{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .service{
+      width: 100%;
+    }
+    #progress-bar-container li .step-inner {
+        position:absolute;
+        width:100%;
+        bottom:0;
+        font-size: 10px;
+    }
+  }
+ 
+  

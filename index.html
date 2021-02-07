@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home|Raster</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-brand">RasterPlayground</div>
+        <ul>
+            <li><a class="link-active" href="#features">Features</a></li>
+            <li><a  href="#use">HowToUse</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+        </ul>
+    </nav>
+    <section class="one">
+        <div class="image-container">
+            <img  class="image" src="https://image.freepik.com/free-vector/data-report-illustration-concept_114360-883.jpg" alt="">
+            <h3 class="heading">
+                <strong>A Color Playground For Raster Maps.</strong> <br> <br>
+                <a id="btn" href="https://play.blueskyhq.in/">Play and Map</a>
+           
+                
+            </h3>
+           
+       
+        </div>
+       
+</section>
+
+<section class="two">
+    <h2>Know the power of Analyzing tool?Raster Playgound</h2>
+   <h4 style="font-size: 1.2rem; font-style: italic;">Map geospatial data intelligence in context of  environment and climate risk. </h4>
+ </section>
+
+ <div id="features" class="services">
+    <h1>Our Features</h1>
+    <div class="cen">
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Raster color manipulation</h2>
+        <p>This feature allows you to manipulate your data w ith raster colors</p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>All state in url</h2>
+        <p>This feature allows you to input url of state in the raster tool</p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Monochromatic tiles URL</h2>
+        <p>This feature allows you to input URL of Monochromatic tiles</p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Clip as shape</h2>
+        <p>This feature  allows for better visualisation.</p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Color selector</h2>
+        <p>This feature allows for Color selection.</p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Mobile version</h2>
+        <p>This feature allows for mobile version capabiity.</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Search bar to search places</h2>
+        <p>This feature will help you search places</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Go to current location</h2>
+        <p>This feature allwos you an access of current location</p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-map"></i>
+        <h2>Dark Mode</h2>
+        <p>Who does not love dark mode mood</p>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="progress-title">HOW TO USE</h1>
+<br> 
+<div id="use" class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">Installation</div></li>
+		<li class="step step02"><div class="step-inner">Add URL</div></li>
+		<li class="step step03"><div class="step-inner">Color pallete</div></li>
+		<li class="step step04"><div class="step-inner">Add alpha</div></li>
+		<li class="step step05"><div class="step-inner">Send & Verify</div></li>
+
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>Installation</h2>
+		<p>clone repo and install using - npm install </p>
+          <p> Run on local - npm run start </p>
+          <p> Build project- npm run build</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>Add URL</h2>
+		<p>Use chrome for better usability (Because initial stage of development) </p>
+        <p>Add monochromatic tiles URL (XYZ format) eg - https://your-tiles-url/{z}/{x}/{-y}.png</p>
+        <p>Add shape file URL (TopoJSON format)</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>Add colour pallete</h2>
+		<p>Add some colour pallet to visualise colors on raster map</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>Add alpha(opacity)</h2>
+		<p>Add alpha (opacity) value (between 0-1)</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>Send and Verify</h2>
+		<p>If you get the desired visualisation, you can copy RGBA (JSON) and use it to generate colour tiles from the backend or send the link to your colleague/friends to verify.
+        </p>
+	</div>
+	</div>
+</div>
+<section class="two">
+    <h2 id="contribute" >How to Contribute.</h2>
+   <h4 style="font-size: 1.2rem; font-style: italic;">We love your input! We want to make contributing to this project as easy and transparent as possible.</h4>
+   <a id="btn" href="">Contribute</a>
+
+</section>
+
+<section class="three">
+    <h2> <a href="https://blueskyhq.in/"> Developed By: Blue Sky Analytics</a></h2>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
