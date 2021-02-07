@@ -369,6 +369,9 @@ html {
         bottom:0;
         font-size: 10px;
     }
+    .image-container .image {
+        max-width: 350px;
+    }
   }
  
   
