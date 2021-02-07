@@ -1,3 +1,6 @@
+// here every step class will call a function that would call addclass method from css and perform accordingly.
+//later it will remove it as well.
+
 $(".step").click(function () {
   $(this).addClass("active").prevAll().addClass("active");
   $(this).nextAll().removeClass("active");
